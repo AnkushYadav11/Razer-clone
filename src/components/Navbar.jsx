@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
     <>
         <div>
-            <div className="flex h-15 justify-center gap-14 text-gray-400">
+            <div className="flex h-15 justify-center gap-12 text-gray-400 border border-black  border-b-green-500 bg-black">
                 <img src={Icon} className='size-12 mt-1' alt="Icon"/>
                 <ul className='flex gap-15 pt-4'>
                     <li>Store</li>
@@ -21,9 +21,6 @@ const Navbar = () => {
                 <img src={Search} className='size-5 mt-5' alt="search" />
                 <img src={Cart} className="size-5 mt-5" alt="cart" />
             </div>
-        </div>
-        <div className='flex justify-center bg-gray-600 p-3 border border-green-500'>
-            <p>Razer Silver Rewards Giveaway: Join & win 500,000 Razer Silver to unlock elite gear. <a href=".">Join Now > </a></p>
         </div>
     </>
     );
