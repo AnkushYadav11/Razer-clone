@@ -12,9 +12,9 @@ import Discord from '../image/discord-grey.svg';
 const Footer = () => {
     return (
         <>
-        <div className='flex justify-center h-[25em] pl-40 pr-40 bg-[#222]-500 pt-10'>
+        <div className='flex justify-center h-[25em] pl-40 pr-40 bg-[#171717] pt-10'>
             <div className='w-[70%] grid grid-cols-5 gap-5'>
-                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[12px]'>
+                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[12px] [&>*]:hover:underline [&>*]:hover:text-white'>
                     <li className='text-white text-[13px]'>Shop</li>
                     <li>RazerStores</li>
                     <li>RazerCafe</li>
@@ -27,7 +27,7 @@ const Footer = () => {
                     <li>Affiliate</li>
                     <li>Newsletter</li>
                 </ul>
-                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[12px]'>
+                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[12px] [&>*]:hover:underline [&>*]:hover:text-white'>
                     <li className='text-white text-[13px]'>Explore</li>
                     <li>Technology</li>
                     <li>Chrome RGB</li>
@@ -35,7 +35,7 @@ const Footer = () => {
                     <li>Esports</li>
                     <li>Collabs</li>
                 </ul>
-                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[12px]'>
+                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[12px] [&>*]:hover:underline [&>*]:hover:text-white'>
                     <li className='text-white text-[13px]'>Support</li>
                     <li>Get Help</li>
                     <li>Registration &<br/>Warranty</li>
@@ -46,7 +46,7 @@ const Footer = () => {
                     <li>Recycling Program</li>
                     <li>Accessibility<br/>Statement</li>
                 </ul>
-                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[12px]'>
+                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[12px] [&>*]:hover:underline [&>*]:hover:text-white'>
                     <li className='text-white text-[13px]'>Company</li>
                     <li>About Us</li>
                     <li>Careers</li>
@@ -55,7 +55,7 @@ const Footer = () => {
                     <li>Contact Us</li>
                     <li>AI Gaming<br/>Newsletter</li>
                 </ul>
-                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[13px]'>
+                <ul className='[&>*]:mb-3 text-gray-400 [&>*]:text-[13px] [&>*]:hover:underline [&>*]:hover:text-white'>
                     <li className='text-white text-[13px]'>Follow Us</li>
                     <li className='[&>*]:size-[30px]'>
                     <img src={Facebook} alt="Facebook" />
@@ -73,21 +73,19 @@ const Footer = () => {
                 <h1>FOR GAMERS. BY GAMERS. <sup>TM</sup></h1>
             </div>
 
-            
         </div>
-        <div className='border ml-40 flex justify-center border-gray-500 w-[80%]'>
-        </div>
+        <hr className='w-[80%] ml-40'/>
         
-        <div>
-                <ul className=' ml-40 m-3 text-[13px] text-gray-400 flex gap-5 '>
+        <div className='bg-[#171717]'>
+                <ul className='ml-38 p-3 text-[13px] text-gray-400 flex gap-5'>
                     <li>Copyright © 2025 Razer Inc. All rights reserved.</li>
-                    <li> Site Map</li> |
-                    <li>Legal Terms</li> |
-                    <li>Privacy Policy</li> |
-                    <li>Cookie Policy</li>
+                    <li className='hover:underline hover:text-white'> Site Map</li> |
+                    <li className='hover:underline hover:text-white'>Legal Terms</li> |
+                    <li className='hover:underline hover:text-white'>Privacy Policy</li> |
+                    <li className='hover:underline hover:text-white'>Cookie Policy</li>
                 </ul>
-
             </div>  
+            <div className='h-5 bg-black'></div>
         </>
     );
 }

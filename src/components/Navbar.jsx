@@ -5,8 +5,8 @@ import Search from '../image/search.svg';
 const Navbar = () => {
     return (
     <>
-        <div>
-            <div className="flex h-15 justify-center gap-12 text-gray-400 border border-black border-b-green-500 bg-black">
+        <div className='h-15'>
+            <div className="flex h-15 justify-center gap-15 text-gray-400 border border-black border-b-green-500 bg-black fixed w-full">
                 <img src={Icon} className='size-12 mt-1' alt="Icon"/>
                 <ul className='flex gap-15 pt-4'>
                     <li>Store</li>
@@ -18,7 +18,7 @@ const Navbar = () => {
                     <li>Community</li>
                     <li>Support</li>
                 </ul>
-                <img src={Search} className='size-5 mt-5' alt="search" />
+                <img src={Search} className='size-4 mt-5' alt="search" />
                 <img src={Cart} className="size-5 mt-5" alt="cart" />
             </div>
         </div>
