@@ -1,13 +1,26 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Bg from '../image/razer-huntsman-v3-pro-8khz-line-homepage-desktop2x.jpg';
+
+// Background images
+import Banner from '../image/razer-huntsman-v3-pro-8khz-line-homepage-desktop2x.jpg';
+import Halloween from '../image/razer-halloween-2025-homepage-desktop2x.jpg';
+import Green from '../image/razer-blade-and-arc-raiders-b-950x580-desktop.jpg';
+
+// Card images
+import Raiju from '../image/razer-raiju-v3-pro-950x580-desktop.jpg';
+import Razer_blade from '../image/razer-blade-fall-specials-950x580-desktop.jpg';
+import Phantom from '../image/razer-phantom-white-homepage-desktop-2x.jpg';
+import Kuromi from '../image/kuromi-birthday-homepage-b-desktop.jpg';
+import Blade from '../image/razer-blade-and-arc-raiders-b-950x580-deskto.jpg';
+import Anni from '../image/razer-20th-anni-b-950x580-desktop.jpg';
 
 const Body = () => {
     return (
 
         <>
+        {/* Home banner */}
         <Link to="/">
-        <div className="bg-cover bg-center h-175 relative" style={{ backgroundImage: `url(${Bg})` }}>
+        <div className="bg-cover bg-center h-175 relative mb-2" style={{ backgroundImage: `url(${Banner})` }}>
             
             <div className='text-center pt-11'>
             <h1 className='text-[53px] font-semibold'>RAZER HUNTSMAN V3 PRO 8KHZ LINE</h1>
@@ -18,6 +31,98 @@ const Body = () => {
 
         </div>  
         </Link>
+
+        {/* Second banner */}
+        <Link to="/">
+        <div className="bg-cover bg-center h-175 relative mb-2" style={{ backgroundImage: `url(${Halloween})` }}>
+            
+            <div className='text-center pt-11'>
+            <h1 className='text-[53px] font-semibold'>HALLOWEEN SPACIALS</h1>
+            <h3 className='text-[28px]'>SPOOKTACULAR DROP AWAIT</h3>
+            <Link to="/" className='pr-7 text-[22px]'>Shop Now</Link>
+            </div>
+        </div>  
+        </Link>
+
+        {/* third banner */}
+        <Link to="/">
+        <div className="bg-cover bg-center h-175 relative mb-2" style={{ backgroundImage: `url(${Green})` }}>
+            <div className='text-center pt-11'>
+                <span className='bg-orange-400 text-black font-bold pl-2 pr-2 text-[14px]'>ONLY AT RAZER</span>
+            <h1 className='text-[53px] font-semibold'>RAZER ESPORTS GREEN COLLECATION</h1>
+            <h3 className='text-[28px]'>GREEN IS THE NEW BLACK</h3>
+            <Link to="/" className='pr-7 text-[22px]'>Learn More</Link>
+            <Link to="/" className='pl-5 text-[22px]'>Buy </Link>
+            </div>
+        </div>  
+        </Link>
+
+        <div className='grid grid-cols-2 gap-2 [&>*]:h-[35em] [&>*]:bg-cover [&>*]:bg-center [&>*]:bg-no-repeat mb-2'>
+            
+            <div style={{backgroundImage : `url(${Raiju})`}}>
+                <div className='mt-10 [&>*]:text-center [&>*]:font-semibold'>
+                    <h1 className='text-[2.5em]'>RAZER RAIJU V3 PRO</h1>
+                    <h2 className='text-[20px]'>FOR THE PRO</h2>
+                    
+                    <div className='flex justify-center gap-5 [&>*]:text-[18px]'>
+                    <Link to="/" className='text-center'>Learn More</Link>
+                    <Link to="/" className=''>Notify Me</Link>
+                    </div>                    
+
+                </div>
+            </div>
+
+            <div style={{backgroundImage : `url(${Razer_blade})`}}>
+                <div className='mt-10 [&>*]:text-center [&>*]:font-semibold'>
+                    <h1 className='text-[2.5em]'>EARLY HOLIDAY SPECIALS:UNLOCKED</h1>
+                    <h2 className='text-[20px]'>UP TO $700 OFF SELECT REZER BLADES</h2>
+                    <div className='flex justify-center gap-5 [&>*]:text-[18px]'>
+                    <Link to="/">Shop Now</Link>
+                    </div>
+                </div>
+            </div>
+            
+            <div style={{backgroundImage : `url(${Phantom})`}}>
+                <div className='mt-10 [&>*]:text-center [&>*]:font-semibold'>
+                    <h1 className='text-[2.5em]'>RAZER PHANTOM WHITE COLLECTION</h1>
+                    <h2 className='text-[20px]'>WITNESS TRUE DESIGN BROUGHT TO LIGHT</h2>
+                    <div className='flex justify-center gap-5 [&>*]:text-[18px]'>
+                    <Link to="/">Learn More</Link>
+                    <Link to="/">Buy</Link>
+                    </div>
+                </div>
+            </div>
+            
+            <div style={{backgroundImage : `url(${Kuromi})`}}>
+                <div className='mt-10 [&>*]:text-center [&>*]:font-semibold'>
+                    <h1 className='text-[2.5em]'>RAZER | KUROMI</h1>
+                    <h2 className='text-[20px]'>UNLEASH CUTE CHAOS</h2>
+                    <div className='flex justify-center gap-5 [&>*]:text-[18px]'>
+                    <Link to="/">Learn More</Link>
+                    </div>
+                </div>
+            </div>
+            
+            <div style={{backgroundImage : `url(${Blade})`}}>
+                <div className='mt-10 [&>*]:text-center [&>*]:font-semibold'>
+                    <h1 className='text-[2.5em]'>RAID READY</h1>
+                    <h2 className='text-[20px]'>GET ARC RAIDERS WITH SELECT RAZER BLADES</h2>
+                    <div className='flex justify-center gap-5 [&>*]:text-[18px]'>
+                    <Link to="/">Learn More</Link>
+                    </div>
+                </div>
+            </div>
+            
+            <div style={{backgroundImage : `url(${Anni})`}}>
+                <div className='mt-10 [&>*]:text-center [&>*]:font-semibold'>
+                    <h1 className='text-[2.5em]'>20TH ANNIVERSARY</h1>
+                    <h2 className='text-[20px]'>FOR GAMERS. BY GAMERS.</h2>
+                    <div className='flex justify-center gap-5 [&>*]:text-[18px]'>
+                    <Link to="/">Learn More</Link>
+                    </div>
+                </div>
+            </div>
+        </div>  
         </>
     );
 }

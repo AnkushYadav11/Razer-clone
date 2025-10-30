@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
     <>
         <div>
-            <div className="flex h-15 justify-center gap-12 text-gray-400 border border-black  border-b-green-500 bg-black">
+            <div className="flex h-15 justify-center gap-12 text-gray-400 border border-black border-b-green-500 bg-black">
                 <img src={Icon} className='size-12 mt-1' alt="Icon"/>
                 <ul className='flex gap-15 pt-4'>
                     <li>Store</li>
