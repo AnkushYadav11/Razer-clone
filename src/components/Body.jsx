@@ -7,6 +7,7 @@ import Halloween from '../image/razer-halloween-2025-homepage-desktop2x.jpg';
 import Green from '../image/razer-blade-and-arc-raiders-b-950x580-desktop.jpg';
 
 // Card images
+import Counter_strike from '../image/counter-strike-2-desktop2x.jpg';
 import Raiju from '../image/razer-raiju-v3-pro-950x580-desktop.jpg';
 import Razer_blade from '../image/razer-blade-fall-specials-950x580-desktop.jpg';
 import Phantom from '../image/razer-phantom-white-homepage-desktop-2x.jpg';
@@ -14,17 +15,19 @@ import Kuromi from '../image/kuromi-birthday-homepage-b-desktop.jpg';
 import Blade from '../image/razer-blade-and-arc-raiders-b-950x580-deskto.jpg';
 import Anni from '../image/razer-20th-anni-b-950x580-desktop.jpg';
 import Arrow from '../image/arrow.png';
+
 const Body = () => {
     return (
         <>
+
         {/* Home banner */}
         <Link to="/">
-        <div className="bg-cover bg-center h-175 mb-3" style={{ backgroundImage: `url(${Banner})` }}>
-            <div className='text-center pt-10'>
-            <h1 className='text-[55px] font-semibold'>RAZER HUNTSMAN V3 PRO 8KHZ LINE</h1>
-            <h3 className='text-[27px]'>FOR THE PRO</h3>
-            <Link to="/" className='pr-3 text-[22px] hover:underline'>Learn More <span><img src={Arrow} alt="arrow-key" className='inline size-[15px]' /></span></Link>
-            <Link to="/" className='pl-3 text-[22px] hover:underline'>Buy <span><img src={Arrow} alt="arrow-key" className='inline size-[15px]' /></span></Link>
+        <div className="bg-cover bg-center h-175 mb-3" style={{ backgroundImage: `url(${Counter_strike})` }}>
+            <div className='text-center pt-11'>
+            <h1 className='text-[53px] font-semibold'>RAZER | COUNTER-STRIKE 2</h1>
+            <h3 className='text-[28px]'>SUMMON THE DRAGON LORE</h3>
+            <Link to="/" className='text-[22px] mr-4 hover:underline'>Learn more<span><img src={Arrow} alt="arrow-key" className='inline size-[15px]' /></span></Link>
+            <Link to="/" className='text-[22px] ml-5 hover:underline'>Buy<span><img src={Arrow} alt="arrow-key" className='inline size-[15px]' /></span></Link>
             </div>
         </div>  
         </Link>
@@ -40,6 +43,16 @@ const Body = () => {
         </div>  
         </Link>
 
+        <Link to="/">
+        <div className="bg-cover bg-center h-175 mb-3" style={{ backgroundImage: `url(${Banner})` }}>
+            <div className='text-center pt-10'>
+            <h1 className='text-[55px] font-semibold'>RAZER HUNTSMAN V3 PRO 8KHZ LINE</h1>
+            <h3 className='text-[27px]'>FOR THE PRO</h3>
+            <Link to="/" className='pr-3 text-[22px] hover:underline'>Learn More <span><img src={Arrow} alt="arrow-key" className='inline size-[15px]' /></span></Link>
+            <Link to="/" className='pl-3 text-[22px] hover:underline'>Buy <span><img src={Arrow} alt="arrow-key" className='inline size-[15px]' /></span></Link>
+            </div>
+        </div>  
+        </Link>
         {/* third banner */}
         <Link to="/">
         <div className="bg-cover bg-center h-175 mb-3" style={{ backgroundImage: `url(${Green})` }}>
