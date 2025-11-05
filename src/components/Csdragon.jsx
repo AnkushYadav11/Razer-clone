@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Csdragon.css";
 import { Link } from "react-router-dom";
 import Cs from "../image/counter-strike-2-desktop2x.jpg";
@@ -9,23 +9,16 @@ import Headphone from "../image/razer-cs2-bsv3pro-1920x700.webp";
 import Pad from "../image/razer-cs2-ggv2l-1920x700.webp";
 import Chair from "../image/razer-cs2-iskur-v2x-1920x700.webp";
 
-const Csdragon = () => {
-  const [play,setPlay] = useState('false');
-  const control = ()=>{
-    if(play === 'true'){
-      setPlay('false')
-      console.log(play);
-    }
-    else{
-      setPlay('true');
-      console.log(play);
-    }
-  }
+import Mouse_dragon from "../image/dragon-mouse.png";
+import Keyboard_dragon from '../image/dragon-keyboard.png';
+import Chair_dragon from '../image/dragon-chair.png';
+import Headphone_dragon from '../image/dragon-headphone.png';
+import Sign_mouse from "../image/signedmouse.png";
 
+const Csdragon = () => {
   return (
     <>
       {/* Main page */}
-
       <img src={Cs} alt="counter-strike" />
 
       <div className="text-center p-5 text-green-500">
@@ -56,8 +49,13 @@ const Csdragon = () => {
       </div>
 
       <div>
-        <video src={Video} controls={false} autoPlay muted className="w-[85%] ml-30" />
-        <button onClick={control} className="border hover:text-gray-500">video controls</button>
+        <video
+          src={Video}
+          controls={false}
+          autoPlay
+          muted
+          className="w-[85%] ml-30"
+        />
       </div>
 
       <div className="text-center p-5 text-green-500">
@@ -140,6 +138,73 @@ const Csdragon = () => {
       </div>
 
       <img src={Chair} alt="Dragon Chair" />
+
+{/* Cars bar */}
+
+<div className="flex justify-center mt-33">
+      <div className="w-[77em] p-2 grid grid-cols-4 gap-4">
+        
+        <div className="w-73">
+          <img src={Sign_mouse} alt="Sign Mouse" className="bg-[#141414] w-full h-70" />
+          <div className="bg-[#222]">
+            <p  className="text-[20px] p-5 pb-2">Razer Viper V3 Pro - Black</p>
+            <p className="text-gray-500 p-5 pt-0">Ultra-lightweight Symmetrical Wireless Gaming Mouse for Pro Esports</p>
+            <div className="flex justify-between p-3 mt-13">
+              <p>US$159.99</p>
+              <button className="bg-[#44d62c] text-black font-bold w-[9em] rounded text-[13px]">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-73">
+          <img src={Mouse_dragon} alt="Dragon mouse" className="bg-[#141414] w-full h-70" />
+          <div className="bg-[#222]">
+            <p  className="text-[20px] p-5 pb-2">Razer Viper V3 Pro - Black</p>
+            <p className="text-gray-500 p-5 pt-0">Ultra-lightweight Symmetrical Wireless Gaming Mouse for Pro Esports</p>
+            <div className="flex justify-between p-3 mt-13">
+              <p>US$159.99</p>
+              <button className="bg-[#44d62c] text-black font-bold w-[9em] rounded text-[13px]">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-73">
+          <img src={Keyboard_dragon} alt="Dragon Keyboard" className="bg-[#141414] w-full h-70" />
+          <div className="bg-[#222]">
+            <p  className="text-[20px] p-5 pb-2">Razer Viper V3 Pro - Black</p>
+            <p className="text-gray-500 p-5 pt-0">Ultra-lightweight Symmetrical Wireless Gaming Mouse for Pro Esports</p>
+            <div className="flex justify-between p-3 mt-13">
+              <p>US$159.99</p>
+              <button className="bg-[#44d62c] text-black font-bold w-[9em] rounded text-[13px]">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-73">
+          <img src={Headphone_dragon} alt="Dragon Headphone" className="bg-[#141414] w-full h-70" />
+          <div className="bg-[#222]">
+            <p  className="text-[20px] p-5 pb-2">Razer Viper V3 Pro - Black</p>
+            <p className="text-gray-500 p-5 pt-0">Ultra-lightweight Symmetrical Wireless Gaming Mouse for Pro Esports</p>
+            <div className="flex justify-between p-3 mt-13">
+              <p>US$159.99</p>
+              <button className="bg-[#44d62c] text-black font-bold w-[9em] rounded text-[13px]">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-73 ml-[30em]">
+          <img src={Chair_dragon} alt="Dragon Chair" className="bg-[#141414] w-full h-70" />
+          <div className="bg-[#222]">
+            <p  className="text-[20px] p-5 pb-2">Razer Viper V3 Pro - Black</p>
+            <p className="text-gray-500 p-5 pt-0">Ultra-lightweight Symmetrical Wireless Gaming Mouse for Pro Esports</p>
+            <div className="flex justify-between p-3 mt-13">
+              <p>US$159.99</p>
+              <button className="bg-[#44d62c] text-black font-bold w-[9em] rounded text-[13px]">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+</div>
+      </div>
     </>
   );
 };
