@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Csdragon.css";
 import { Link } from "react-router-dom";
 import Cs from "../image/counter-strike-2-desktop2x.jpg";
@@ -10,6 +10,18 @@ import Pad from "../image/razer-cs2-ggv2l-1920x700.webp";
 import Chair from "../image/razer-cs2-iskur-v2x-1920x700.webp";
 
 const Csdragon = () => {
+  const [play,setPlay] = useState('false');
+  const control = ()=>{
+    if(play === 'true'){
+      setPlay('false')
+      console.log(play);
+    }
+    else{
+      setPlay('true');
+      console.log(play);
+    }
+  }
+
   return (
     <>
       {/* Main page */}
@@ -44,7 +56,8 @@ const Csdragon = () => {
       </div>
 
       <div>
-        <video src={Video} controls={false} muted className="w-[85%] ml-30" />
+        <video src={Video} controls={false} autoPlay muted className="w-[85%] ml-30" />
+        <button onClick={control} className="border hover:text-gray-500">video controls</button>
       </div>
 
       <div className="text-center p-5 text-green-500">
