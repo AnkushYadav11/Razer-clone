@@ -6,7 +6,8 @@
   position: absolute;
   background-color: #222;
   width: 100em;
-  margin-top: 20px;
+  
+  margin-top: 18px;
   border: black;
   border-bottom:2px solid green;
 }

@@ -14,8 +14,8 @@ const Navbar = () => {
             <li className="parent">Store
             <div className="child">
               <div>
-              <h1>Explore</h1>
               <ul className="flex flex-col gap-5 overflow-y-scroll h-[30em]">
+              <h1>Explore</h1>
                 <li>Shop The Latest In Razer</li>
                 <li>Only at Razer</li>
                 <li>Laptops & Accessories</li>
@@ -59,17 +59,6 @@ const Navbar = () => {
           <img src={Cart} className="size-5 mt-5" alt="cart" />
         </div>
       </div>
-
-      {/* <div className='h-23'>
-            <div className="flex h-13 justify-between text-gray-400 border border-black border-b-green-500 bg-black fixed w-full">
-                <img src={Menu_open} className='mt-4 h-3 ml-5' alt="Icon"/>
-                <img src={Icon} className='size-11' alt="Icon"/>
-                <div className='flex gap-6'>
-                <img src={Search} className='size-4 mt-3.5' alt="search" />
-                <img src={Cart} className="size-5 mt-3.5 mr-5" alt="cart" />
-                </div>
-            </div> */}
-      {/* </div> */}
     </>
   );
 };
